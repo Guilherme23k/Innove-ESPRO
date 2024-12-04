@@ -1,0 +1,27 @@
+@import "../../../color-variables.scss";
+
+header{
+    position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        justify-content: space-between;
+        /* background-color: transparent; */
+        background-color: var(--primary);
+        padding: 2rem 9%;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+    
+        nav a {
+            font-size: 1.55rem;
+            margin-left: 2rem;
+            color: var(--button-text);
+            text-decoration: none;
+            font-family: Nunito, sans-serif;
+        }
+    }
+    

@@ -1,0 +1,87 @@
+@import "../../../color-variables.scss";
+
+
+
+*{
+     font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            transition: all .2s linear;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+     background: linear-gradient(to right, var(--gradiente-primary), var(--gradient-secondary));
+
+
+    .content{
+        flex: 1 1 40rem;
+        padding-top: 6.5rem;
+
+        h3{
+                font-size: 2.5rem;
+                    color: var(--primary-text);
+                    margin-top: 20px;
+        }
+
+        span{
+             color: var(--text-span)
+        }
+
+        .btn{
+                display: inline-block;
+                    padding: .8rem 3rem;
+                    border: .2rem solid var(--btn-border);
+                    color: var(--btn-text);
+                    cursor: pointer;
+                    font-size: 1.063rem;
+                    border-radius: .5rem;
+                    font-weight: bold;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 0;
+                    margin-top: 1rem;
+        }  
+                .btn::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 0%;
+                    height: 100%;
+                    background: #5c5deb;
+                    transition: 0.3s linear;
+                    z-index: -1;
+                }
+
+                                .btn:hover::before {
+                                    width: 100%;
+                                    left: 0;
+                                }
+    }
+    .image{
+        flex: 1 1 10rem;
+        
+    }
+    
+    
+    img{
+            margin-top: 72px;
+                width: 14.134rem;
+                padding: 1rem;
+                animation: float 3s linear infinite;
+                margin-left: 20%;
+    }
+}

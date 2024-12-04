@@ -1,0 +1,50 @@
+// $button-text: #C32B96;
+// $gradient-blue:#6085EE;
+// $gradient-white:#ffff;
+// $text-span: #5C5DEB;
+// $text-span-light: #6085EE;
+
+:root {
+    --primary: #fff;
+    --container: #fff;
+    --primary-text: #221f1f;
+    --secondary-text: #552924;
+    --button-text: #C32B96;
+    --gradiente-primary: #6085EE;
+    --gradient-secondary: #ffff;
+    --text-span:#5C5DEB;
+    --text-span-light:#6085EE;
+    --btn-border: #5C5DEB;
+    --btn-text: #333;
+    --btn-text-popular: #333;
+    --button-dark-theme: #333;
+}
+
+body.dark-theme {
+    --container: #c3c3c3;
+    --primary: #1f1f1f;
+    --primary-text: #ffffff;
+    --secondary-text: #e3b8b2;
+    --button-text: #C32B96;
+    --gradiente-primary: #6085EE;
+    --gradient-secondary: #2b2828;
+    --text-span: #9B1E6F;
+    --btn-border: #B9BBF6;
+    --btn-text: #fff;
+    --btn-text-popular: #333;
+    --button-dark-theme: #fff;
+}
+
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(3rem);
+    }
+}
