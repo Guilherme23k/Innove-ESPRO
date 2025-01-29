@@ -6,6 +6,7 @@ import { PopularComponent } from "../popular/popular.component";
 import { FooterComponent } from "../footer/footer.component";
 import { StyleService } from '../../services/style.service';
 import { ButtonComponent } from "../../buttons/button/button.component";
+import { PopularCardComponent } from "../../components/popular-card/popular-card.component";
 
 @Component({
   selector: 'app-home',

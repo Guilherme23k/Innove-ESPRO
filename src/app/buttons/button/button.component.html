@@ -1,5 +1,5 @@
 <button (click) = "toggleTheme()">
 
-    <img src="{{ icon }}">
+    <img [src]="icon" [ngClass]="{'dark-theme-icon' : isDarkTheme}">
 
 </button>

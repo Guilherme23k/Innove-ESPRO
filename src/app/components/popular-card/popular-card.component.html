@@ -1,0 +1,12 @@
+<div class="box">
+    <span class="price" [ngClass]="{'p-v':priceIndex === 0, 'p-a':priceIndex === 1}">{{ priceLabel }}</span>
+    <img [src]="imageUrl" alt="{{ title }}">
+    <h3>{{ title }}</h3>
+    <div class="stars-container">
+        <div *ngFor="let _ of [].constructor(repeatCount)" class="stars">
+            <img [src]="stars">
+        </div>
+        <img [src]="emptyStar" alt="">
+    </div>
+    <a href="#" class="btn">Veja o que rolou</a>
+</div>

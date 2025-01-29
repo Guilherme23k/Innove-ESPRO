@@ -1,0 +1,11 @@
+<section class="popular">
+    <h1 class="heading">Outros <span>Eventos</span> Populares </h1>
+
+    <swiper-container [config]="swiperConfig" init="false">
+        <swiper-slide *ngFor="let card of cards">
+            <app-popular-card [imageUrl]="card.imageUrl" [title]="card.title" [priceIndex]="card.priceIndex"
+                [repeatCount]="card.starsCount">
+            </app-popular-card>
+        </swiper-slide>
+    </swiper-container>
+</section>

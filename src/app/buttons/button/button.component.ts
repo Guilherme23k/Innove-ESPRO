@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { StyleService } from '../../services/style.service';
 import { Etheme } from '../../enums/ETheme.enum';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-button',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss',
 })
@@ -13,7 +14,7 @@ export class ButtonComponent {
 
   public icon: string = 'https://www.svgrepo.com/show/532875/moon.svg';
 
-  private isDarkTheme = false;
+  public isDarkTheme = false;
 
   toggleTheme() {
     const body = document.body;
