@@ -4,25 +4,6 @@
 @import 'swiper/scss/pagination';
 @import 'swiper/scss/scrollbar';
 
-swiper-container {
-    width: 100%;
-    height: 100%;
-    padding: 10px 0;
-}
-
-swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-}
-
-app-popular-card {
-    width: 100%;
-    max-width: 300px;
-}
-
-
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -33,7 +14,6 @@ app-popular-card {
     text-decoration: none;
     transition: all .2s linear;
 }
-
 section {
     padding: 2rem 9%;
 }
@@ -53,77 +33,21 @@ background-color: var(--primary);
         color: var(--text-span)
     }
 
-    .box-container {
-        display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+        swiper-container {
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+        }
+    
+        swiper-slide {
+            display: flex;
             justify-content: center;
-
-        .btn {
-                display: inline-block;
-                padding: .8rem 3rem;
-                border: .2rem solid var(--btn-border);
-                color: var(--btn-text-popular);
-                cursor: pointer;
-                font-size: 1.063rem;
-                border-radius: .5rem;
-                font-weight: bold;
-                position: relative;
-                overflow: hidden;
-                z-index: 0;
-                margin-top: 1rem;
-            }
-        
-            .btn::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 0%;
-                height: 100%;
-                background: #5c5deb;
-                transition: 0.3s linear;
-                z-index: -1;
-            }
-        
-            .btn:hover::before {
-                width: 100%;
-                left: 0;
-            }
+            align-items: center;
+            width: auto;
         }
-
-        .box {
-
-            
-            padding: 1.25rem;
-            background-color: var(--container);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-            border: 0.1rem solid rgba(0, 0, 0, 0.3);
-            border-radius: 0.5rem;
-            text-align: center;
-            flex: 1 1 16.162rem;
-            position: relative;
-
-            img {
-                height: 10rem;
-                object-fit: cover;
-                width: 100%;
-                border-radius: 0.5rem;
-            }
-
-            
-
-            h3 {
-                color: #522924;
-                font-size: 1.563rem;
-                padding-top: 1rem;
-            }
-
-            .stars {
-                svg {
-                    width: 1rem;
-                    filter: invert(98%) sepia(88%) saturate(3097%) hue-rotate(330deg) brightness(93%) contrast(100%);
-                }
-            }
+    
+        app-popular-card {
+            width: 100%;
+            max-width: 300px;
         }
-    }
+}
