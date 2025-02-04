@@ -84,4 +84,13 @@ section{
                 animation: float 3s linear infinite;
                 margin-left: 20%;
     }
+
+        @media (max-width: 768px) {
+
+            .image {
+                   display: none;
+            
+                }
+
+        }
 }
