@@ -72,27 +72,31 @@ export class PopularComponent implements AfterViewInit{
   ]
 
   public swiperConfig = {
-  slidesPerView: 3, // Exibe 3 cards por vez
-  spaceBetween: 10, // Espaço entre os cards
-  navigation: false, // Botões de navegação (próximo/anterior)
-  pagination: { clickable: true }, // Paginação (bolinhas indicadoras)
+  slidesPerView: 3,
+  spaceBetween: 10,
+  navigation: false,
+  pagination: { clickable: true },
   autoplay: {
-    delay: 3000, // Rola automaticamente a cada 3 segundos
-    disableOnInteraction: false, // Continua rolando após interação do usuário
+    delay: 3000,
+    disableOnInteraction: false,
   },
-  loop: true, // Habilita o loop infinito
+  loop: true,
   breakpoints: {
-    640: {
-      slidesPerView: 2, // Em telas menores, exibe 2 cards por vez
+    0: { // Para telas muito pequenas (mobile)
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    640: { // Pequenas telas (tablets pequenos)
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    768: { // Tablets médios
+      slidesPerView: 2,
       spaceBetween: 20,
     },
-    768: {
-      slidesPerView: 3, // Em telas médias, exibe 3 cards por vez
+    1024: { // Telas maiores
+      slidesPerView: 3,
       spaceBetween: 30,
-    },
-    1024: {
-      slidesPerView: 4, // Em telas grandes, exibe 4 cards por vez
-      spaceBetween: 40,
     },
   }
 };
