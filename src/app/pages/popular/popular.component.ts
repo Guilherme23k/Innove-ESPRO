@@ -15,6 +15,24 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 export class PopularComponent implements AfterViewInit{
   cards= [
     {
+      imageUrl: "https://i.imgur.com/i3hMYsG.jpeg",
+      title: 'Outubro Rosa',
+      priceIndex: 0,
+      starsCount: 4,
+    },  
+    {
+      imageUrl: "https://i.imgur.com/B5ebvwT.jpeg",
+      title: 'Halloween',
+      priceIndex: 0,
+      starsCount: 4,
+    },  
+    {
+      imageUrl: "https://i.imgur.com/4Q2Ep8f.jpeg",
+      title: 'Novembro Azul',
+      priceIndex: 0,
+      starsCount: 4,
+    },  
+    {
       imageUrl: "https://innoveeventos.netlify.app/img/Moeda.jpg",
       title: 'Museu da Moeda',
       priceIndex: 0,
@@ -67,7 +85,7 @@ export class PopularComponent implements AfterViewInit{
       title: 'Museu do Holocausto',
       priceIndex: 1,
       starsCount: 4,
-    }
+    },
     
   ]
 
