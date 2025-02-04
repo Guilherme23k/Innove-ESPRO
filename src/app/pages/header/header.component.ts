@@ -11,5 +11,13 @@ import { ButtonComponent } from "../../buttons/button/button.component";
   encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent {
+  menuOpen = false;
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
 }

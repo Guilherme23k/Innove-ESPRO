@@ -1,11 +1,17 @@
 <header>
-    <img ngSrc="https://innoveeventos.netlify.app/img/logo-texto.png" width="180" height="62">
-    <nav>
-        <a href="#home">Principal</a>
-        <a href="#speciality">Sobre Nós</a>
-        <a href="#gallery">Eventos</a>
+    <img src="https://innoveeventos.netlify.app/img/logo-texto.png" width="180" height="62">
+
+    
+    <button class="menu-toggle" (click)="toggleMenu()">
+        &#9776; 
+    </button>
+
+    
+    <nav [class.open]="menuOpen">
+        <a href="#home" (click)="closeMenu()">Principal</a>
+        <a href="#speciality" (click)="closeMenu()">Sobre Nós</a>
+        <a href="#gallery" (click)="closeMenu()">Eventos</a>
 
         <app-button></app-button>
-
     </nav>
 </header>
