@@ -74,8 +74,8 @@ export class PopularComponent implements AfterViewInit{
   public swiperConfig = {
   slidesPerView: 3,
   spaceBetween: 10,
-  navigation: false,
-  pagination: { clickable: true },
+  navigation: true,
+  pagination: false,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
