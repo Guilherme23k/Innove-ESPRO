@@ -31,7 +31,6 @@ header {
         }
     }
 
-    
     .menu-toggle {
         display: none;
         background: none;
@@ -41,7 +40,6 @@ header {
         color: var(--button-text);
     }
 
-    // Responsividade: Mobile
     @media (max-width: 768px) {
         padding: 1rem 3%;
 
@@ -71,6 +69,17 @@ header {
 
         nav.open {
             right: 0;
+        }
+
+        .close-menu {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--button-text);
         }
     }
 }

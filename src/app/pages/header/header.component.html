@@ -6,8 +6,11 @@
         &#9776; 
     </button>
 
-    
+   
     <nav [class.open]="menuOpen">
+        
+        <button class="close-menu" (click)="closeMenu()">✖</button>
+
         <a href="#home" (click)="closeMenu()">Principal</a>
         <a href="#speciality" (click)="closeMenu()">Sobre Nós</a>
         <a href="#gallery" (click)="closeMenu()">Eventos</a>

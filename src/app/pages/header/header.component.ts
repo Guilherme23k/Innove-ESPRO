@@ -1,4 +1,3 @@
-import { NgOptimizedImage } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ButtonComponent } from "../../buttons/button/button.component";
 
@@ -11,7 +10,7 @@ import { ButtonComponent } from "../../buttons/button/button.component";
   encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent {
-  menuOpen = false;
+   menuOpen = false;
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
