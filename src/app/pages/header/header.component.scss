@@ -40,6 +40,10 @@ header {
         color: var(--button-text);
     }
 
+    .close-menu{
+        display: none;
+    }
+
     @media (max-width: 768px) {
         padding: 1rem 3%;
 
@@ -72,6 +76,7 @@ header {
         }
 
         .close-menu {
+            display: block;
             position: absolute;
             top: 15px;
             right: 15px;
